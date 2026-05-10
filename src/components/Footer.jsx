@@ -15,7 +15,7 @@ const Footer = () => {
     {
       name: "فيسبوك",
       icon: <FaFacebookF />,
-      url: "https://www.facebook.com/ProstElzawy.New",
+      url: "https://www.facebook.com/profile.php?id=61580352808105",
       color: "hover:bg-blue-600",
     },
     {
@@ -49,18 +49,18 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <img
                   src={logo}
-                  alt="ElZawy - New"
+                  alt="Fateer Wi 3asal"
                   className="w-12 h-12 object-contain"
                 />
                 <span className="text-2xl font-bold bg-gradient-to-r from-[#E41E26] to-[#FFFFFF] bg-clip-text text-transparent">
-                  ElZawy - New
+                  فطير و عسل
                 </span>
               </div>
             </Link>
 
             <p className="text-gray-300 mb-6 leading-relaxed">
-              استمتع بتجربة طعام فريدة مع وصفاتنا الخاصة التي تمزج بين النكهة
-              الأصيلة والمذاق الشهي.
+              استمتع بأشهى أنواع الفطير الحلو والحادق المحضر يوميًا بأجود
+              المكونات، مع نكهات شرقية أصيلة وطعم لا يُقاوم.
             </p>
 
             <div className="space-y-3">
@@ -163,7 +163,7 @@ const Footer = () => {
                 className="text-gray-400 text-sm text-center flex flex-wrap items-center justify-center gap-2"
                 dir="rtl"
               >
-                © {currentYear} ElZawy - New. جميع الحقوق محفوظة.
+                © {currentYear} فطير و عسل. جميع الحقوق محفوظة.
                 <span>|</span>
                 <Link
                   to="/privacy-policy"

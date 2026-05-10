@@ -411,10 +411,10 @@ export default function Reviews() {
   return (
     <>
       <Helmet>
-        <title>الزاوي نيو | El-Zawy New</title>
+        <title>فطير و عسل | Fateer Wi 3asal</title>
         <meta
           name="description"
-          content="الزاوي نيو، مطعم عصري يقدم أفضل المأكولات الشرقية والغربية وتجربة طعام فريدة، مع خدمة عالية الجودة."
+          content="فطير وعسل، مطعم متخصص في تقديم أشهى أنواع الفطير الحلو والحادق بأجود المكونات، مع طعم شرقي أصيل وتجربة مميزة تناسب جميع الأذواق."
         />
       </Helmet>
       <div

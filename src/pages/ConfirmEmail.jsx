@@ -197,10 +197,10 @@ export default function ConfirmEmail() {
   return (
     <>
       <Helmet>
-        <title>الزاوي نيو | El-Zawy New</title>
+        <title>فطير و عسل | Fateer Wi 3asal</title>
         <meta
           name="description"
-          content="الزاوي نيو، مطعم عصري يقدم أفضل المأكولات الشرقية والغربية وتجربة طعام فريدة، مع خدمة عالية الجودة."
+          content="فطير وعسل، مطعم متخصص في تقديم أشهى أنواع الفطير الحلو والحادق بأجود المكونات، مع طعم شرقي أصيل وتجربة مميزة تناسب جميع الأذواق."
         />
       </Helmet>
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-[#fff5f5] to-[#ffe5e5] dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 px-4 relative font-sans overflow-hidden transition-colors duration-300">
