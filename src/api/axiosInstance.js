@@ -11,7 +11,7 @@ axiosInstance.interceptors.request.use((config) => {
     config.headers.Authorization = `Bearer ${token}`;
   }
 
-  config.headers.Tenant = "AbuAya";
+  config.headers.Tenant = "fateer_wi_3asal";
 
   return config;
 });
