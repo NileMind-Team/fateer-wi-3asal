@@ -15,7 +15,7 @@ const Footer = () => {
     {
       name: "فيسبوك",
       icon: <FaFacebookF />,
-      url: "https://www.facebook.com/profile.php?id=61580352808105",
+      url: "https://www.facebook.com/share/1J1DUsn3J1/",
       color: "hover:bg-blue-600",
     },
     {
