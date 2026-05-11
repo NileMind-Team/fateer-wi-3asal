@@ -206,8 +206,8 @@ export default function ConfirmEmail() {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-[#fff5f0] to-[#fff0e0] dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 px-4 relative font-sans overflow-hidden transition-colors duration-300">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -left-20 -top-20 w-80 h-80 bg-gradient-to-r from-[#FDAF03]/10 to-[#000000]/10 dark:from-[#FDAF03]/20 dark:to-[#000000]/20 rounded-full blur-3xl"></div>
-          <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-gradient-to-r from-[#000000]/10 to-[#FDAF03]/10 dark:from-[#000000]/20 dark:to-[#FDAF03]/20 rounded-full blur-3xl"></div>
+          <div className="absolute -left-20 -top-20 w-80 h-80 bg-gradient-to-r from-[#8D4C0B]/10 to-[#000000]/10 dark:from-[#8D4C0B]/20 dark:to-[#000000]/20 rounded-full blur-3xl"></div>
+          <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-gradient-to-r from-[#000000]/10 to-[#8D4C0B]/10 dark:from-[#000000]/20 dark:to-[#8D4C0B]/20 rounded-full blur-3xl"></div>
         </div>
 
         <motion.div
@@ -217,7 +217,7 @@ export default function ConfirmEmail() {
           className="w-full max-w-md bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl shadow-2xl rounded-3xl border border-white/50 dark:border-gray-700/50 relative overflow-hidden transition-colors duration-300"
         >
           {/* Form Background Pattern */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#FDAF03]/5 to-transparent rounded-bl-3xl"></div>
+          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#8D4C0B]/5 to-transparent rounded-bl-3xl"></div>
           <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-[#000000]/5 to-transparent rounded-tr-3xl"></div>
 
           <div className="p-8">
@@ -228,11 +228,11 @@ export default function ConfirmEmail() {
                 className="flex flex-col items-center space-y-6 py-4"
               >
                 <div className="relative">
-                  <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#FDAF03]"></div>
+                  <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#8D4C0B]"></div>
                   <div className="absolute inset-0 animate-ping rounded-full h-16 w-16 border-t-4 border-b-4 border-[#000000] opacity-75"></div>
                 </div>
 
-                <h2 className="text-2xl font-bold bg-gradient-to-r from-[#FDAF03] to-[#000000] bg-clip-text text-transparent text-center">
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-[#8D4C0B] to-[#000000] bg-clip-text text-transparent text-center">
                   جاري تأكيد بريدك الإلكتروني...
                 </h2>
 
@@ -242,13 +242,13 @@ export default function ConfirmEmail() {
 
                 {/* Animated Dots */}
                 <div className="flex space-x-2 justify-center mt-4">
-                  <div className="w-3 h-3 bg-[#FDAF03] rounded-full animate-bounce"></div>
+                  <div className="w-3 h-3 bg-[#8D4C0B] rounded-full animate-bounce"></div>
                   <div
                     className="w-3 h-3 bg-[#000000] rounded-full animate-bounce"
                     style={{ animationDelay: "0.2s" }}
                   ></div>
                   <div
-                    className="w-3 h-3 bg-[#FDAF03] rounded-full animate-bounce"
+                    className="w-3 h-3 bg-[#8D4C0B] rounded-full animate-bounce"
                     style={{ animationDelay: "0.4s" }}
                   ></div>
                 </div>
@@ -273,7 +273,7 @@ export default function ConfirmEmail() {
                   )}
                 </div>
 
-                <h2 className="text-2xl font-bold bg-gradient-to-r from-[#FDAF03] to-[#000000] bg-clip-text text-transparent text-center">
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-[#8D4C0B] to-[#000000] bg-clip-text text-transparent text-center">
                   {success ? "تم تأكيد البريد الإلكتروني" : "فشل التأكيد"}
                 </h2>
 
@@ -286,7 +286,7 @@ export default function ConfirmEmail() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => navigate("/login")}
-                    className="mt-4 bg-[#FDAF03] text-white px-8 py-3 rounded-xl font-semibold hover:shadow-xl hover:shadow-[#FDAF03]/25 transition-all duration-300 hover:bg-[#e09900] border border-[#FDAF03]"
+                    className="mt-4 bg-[#8D4C0B] text-white px-8 py-3 rounded-xl font-semibold hover:shadow-xl hover:shadow-[#8D4C0B]/25 transition-all duration-300 hover:bg-[#8e4700] border border-[#8D4C0B]"
                   >
                     العودة لتسجيل الدخول
                   </motion.button>
@@ -297,7 +297,7 @@ export default function ConfirmEmail() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => navigate("/register")}
-                    className="mt-4 bg-[#FDAF03] text-white px-8 py-3 rounded-xl font-semibold hover:shadow-xl hover:shadow-[#FDAF03]/25 transition-all duration-300 hover:bg-[#e09900] border border-[#FDAF03]"
+                    className="mt-4 bg-[#8D4C0B] text-white px-8 py-3 rounded-xl font-semibold hover:shadow-xl hover:shadow-[#8D4C0B]/25 transition-all duration-300 hover:bg-[#8e4700] border border-[#8D4C0B]"
                   >
                     المحاولة مرة أخرى
                   </motion.button>
@@ -305,13 +305,13 @@ export default function ConfirmEmail() {
 
                 {/* Animated Dots */}
                 <div className="flex space-x-2 justify-center mt-4">
-                  <div className="w-2 h-2 bg-[#FDAF03] rounded-full animate-bounce"></div>
+                  <div className="w-2 h-2 bg-[#8D4C0B] rounded-full animate-bounce"></div>
                   <div
                     className="w-2 h-2 bg-[#000000] rounded-full animate-bounce"
                     style={{ animationDelay: "0.2s" }}
                   ></div>
                   <div
-                    className="w-2 h-2 bg-[#FDAF03] rounded-full animate-bounce"
+                    className="w-2 h-2 bg-[#8D4C0B] rounded-full animate-bounce"
                     style={{ animationDelay: "0.4s" }}
                   ></div>
                 </div>

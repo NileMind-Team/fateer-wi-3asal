@@ -24,7 +24,7 @@ export default function SearchFilterBar({
             placeholder="ابحث في مناطق التوصيل..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pr-10 pl-4 py-3 border border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#FDAF03] focus:border-transparent transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white text-right"
+            className="w-full pr-10 pl-4 py-3 border border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#8D4C0B] focus:border-transparent transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white text-right"
           />
         </div>
 
@@ -35,7 +35,7 @@ export default function SearchFilterBar({
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={handleAddNewArea}
-            className="flex items-center gap-2 bg-[#FDAF03] text-white px-4 sm:px-5 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base whitespace-nowrap border border-[#FDAF03] hover:bg-[#e09900]"
+            className="flex items-center gap-2 bg-[#8D4C0B] text-white px-4 sm:px-5 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base whitespace-nowrap border border-[#8D4C0B] hover:bg-[#8e4700]"
           >
             <span className="hidden sm:inline">إضافة منطقة</span>
             <span className="sm:hidden">إضافة</span>

@@ -16,8 +16,8 @@ export default function WaitingConfirmation({
       className="flex flex-col items-center justify-center py-8 space-y-6 max-w-md mx-auto w-full"
     >
       <div className="relative">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#FDAF03]"></div>
-        <div className="absolute inset-0 animate-ping rounded-full h-16 w-16 border-t-4 border-b-4 border-[#FDAF03] opacity-30"></div>
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#8D4C0B]"></div>
+        <div className="absolute inset-0 animate-ping rounded-full h-16 w-16 border-t-4 border-b-4 border-[#8D4C0B] opacity-30"></div>
       </div>
       <h2 className="text-xl font-bold text-gray-800 dark:text-white text-center">
         {forgetMode
@@ -38,7 +38,7 @@ export default function WaitingConfirmation({
         className={`w-full font-semibold py-3.5 rounded-xl transition-all duration-300 text-lg relative overflow-hidden border ${
           resendDisabled
             ? "bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed border-gray-300"
-            : "bg-[#FDAF03] text-white hover:shadow-xl hover:shadow-[#FDAF03]/25 border-[#FDAF03] hover:bg-[#e09900]"
+            : "bg-[#8D4C0B] text-white hover:shadow-xl hover:shadow-[#8D4C0B]/25 border-[#8D4C0B] hover:bg-[#8e4700]"
         }`}
       >
         {resendDisabled
@@ -51,7 +51,7 @@ export default function WaitingConfirmation({
 
       <button
         onClick={onBackToLogin}
-        className="text-[#FDAF03] hover:text-[#e09900] underline font-medium transition-colors duration-200 text-sm"
+        className="text-[#8D4C0B] hover:text-[#8e4700] underline font-medium transition-colors duration-200 text-sm"
       >
         العودة إلى تسجيل الدخول
       </button>

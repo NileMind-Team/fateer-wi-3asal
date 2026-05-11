@@ -31,13 +31,13 @@ export default function SearchBar({
           {/* Search Input */}
           <div className="flex-1">
             <div className="relative group" style={{ direction: "ltr" }}>
-              <FaSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#FDAF03] text-sm transition-all duration-300 group-focus-within:scale-110" />
+              <FaSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#8D4C0B] text-sm transition-all duration-300 group-focus-within:scale-110" />
               <input
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 onKeyPress={handleKeyPress}
-                className="w-full border border-gray-200 bg-white text-black rounded-xl sm:rounded-2xl pr-10 pl-4 py-3 sm:py-4 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-transparent transition-all duration-200 text-sm sm:text-base shadow-lg"
+                className="w-full border border-gray-200 bg-white text-black rounded-xl sm:rounded-2xl pr-10 pl-4 py-3 sm:py-4 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-transparent transition-all duration-200 text-sm sm:text-base shadow-lg"
                 placeholder="...البحث بالبريد الإلكتروني"
                 style={{ textAlign: "right" }}
               />
@@ -49,7 +49,7 @@ export default function SearchBar({
                       setTimeout(() => searchUsers(), 100);
                     }
                   }}
-                  className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-[#FDAF03] transition-colors duration-200"
+                  className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-[#8D4C0B] transition-colors duration-200"
                 >
                   <FaTimes size={14} />
                 </button>

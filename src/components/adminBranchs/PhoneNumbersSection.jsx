@@ -104,13 +104,13 @@ const PhoneNumbersSection = ({ phoneNumbers, setPhoneNumbers }) => {
               رقم الهاتف *
             </label>
             <div className="relative group">
-              <FaPhone className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#FDAF03] text-xs" />
+              <FaPhone className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#8D4C0B] text-xs" />
               <input
                 type="text"
                 name="phone"
                 value={phoneNumber.phone}
                 onChange={handlePhoneInputChange}
-                className="w-full border-2 border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-600 text-black dark:text-white rounded-lg pr-9 pl-3 py-2 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 text-sm"
+                className="w-full border-2 border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-600 text-black dark:text-white rounded-lg pr-9 pl-3 py-2 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-[#8D4C0B] transition-all duration-200 text-sm"
                 placeholder="أدخل رقم الهاتف"
               />
             </div>
@@ -128,10 +128,10 @@ const PhoneNumbersSection = ({ phoneNumbers, setPhoneNumbers }) => {
                     openDropdown === "phoneType" ? null : "phoneType",
                   )
                 }
-                className="w-full flex items-center justify-between border-2 border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-600 text-black dark:text-white rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 text-sm"
+                className="w-full flex items-center justify-between border-2 border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-600 text-black dark:text-white rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-[#8D4C0B] transition-all duration-200 text-sm"
               >
                 <span className="flex items-center gap-2">
-                  <FaPhone className="text-[#FDAF03] text-xs" />
+                  <FaPhone className="text-[#8D4C0B] text-xs" />
                   {getPhoneTypeArabic(phoneNumber.type)}
                 </span>
                 <motion.div
@@ -140,7 +140,7 @@ const PhoneNumbersSection = ({ phoneNumbers, setPhoneNumbers }) => {
                   }}
                   transition={{ duration: 0.3 }}
                 >
-                  <FaChevronDown className="text-[#FDAF03] text-xs" />
+                  <FaChevronDown className="text-[#8D4C0B] text-xs" />
                 </motion.div>
               </button>
 
@@ -187,7 +187,7 @@ const PhoneNumbersSection = ({ phoneNumbers, setPhoneNumbers }) => {
                 checked={phoneNumber.isWhatsapp}
                 onChange={handlePhoneInputChange}
                 disabled={phoneNumber.type !== "Mobile"}
-                className={`w-3 h-3 text-[#FDAF03] bg-gray-100 border-gray-300 rounded focus:ring-[#FDAF03] focus:ring-1 ${
+                className={`w-3 h-3 text-[#8D4C0B] bg-gray-100 border-gray-300 rounded focus:ring-[#8D4C0B] focus:ring-1 ${
                   phoneNumber.type !== "Mobile"
                     ? "cursor-not-allowed opacity-50"
                     : ""
@@ -216,7 +216,7 @@ const PhoneNumbersSection = ({ phoneNumbers, setPhoneNumbers }) => {
             disabled={!phoneNumber.phone.trim()}
             className={`py-2 rounded-lg font-semibold transition-all duration-300 text-sm flex items-center justify-center gap-2 border-2 ${
               phoneNumber.phone.trim()
-                ? "bg-[#FDAF03] text-white hover:bg-[#e09900] border-[#FDAF03]"
+                ? "bg-[#8D4C0B] text-white hover:bg-[#8e4700] border-[#8D4C0B]"
                 : "bg-gray-300 dark:bg-gray-500 text-gray-500 dark:text-gray-400 cursor-not-allowed border-gray-300 dark:border-gray-500"
             }`}
           >
@@ -237,7 +237,7 @@ const PhoneNumbersSection = ({ phoneNumbers, setPhoneNumbers }) => {
               className="flex items-center justify-between bg-white dark:bg-gray-600 border-2 border-gray-300 dark:border-gray-500 rounded-lg p-2 sm:p-3"
             >
               <div className="flex items-center gap-2 sm:gap-3 flex-1">
-                <FaPhone className="text-[#FDAF03] text-xs sm:text-sm" />
+                <FaPhone className="text-[#8D4C0B] text-xs sm:text-sm" />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
                     <span className="text-sm font-medium text-gray-800 dark:text-white">

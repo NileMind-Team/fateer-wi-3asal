@@ -36,14 +36,14 @@ export default function AuthLayout({
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -left-20 -top-20 w-80 h-80 bg-gradient-to-r from-[#FDAF03]/10 to-[#e09900]/10 dark:from-[#FDAF03]/20 dark:to-[#e09900]/20 rounded-full blur-3xl"></div>
-        <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-gradient-to-r from-[#e09900]/10 to-[#FDAF03]/10 dark:from-[#e09900]/20 dark:to-[#FDAF03]/20 rounded-full blur-3xl"></div>
+        <div className="absolute -left-20 -top-20 w-80 h-80 bg-gradient-to-r from-[#8D4C0B]/10 to-[#8e4700]/10 dark:from-[#8D4C0B]/20 dark:to-[#8e4700]/20 rounded-full blur-3xl"></div>
+        <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-gradient-to-r from-[#8e4700]/10 to-[#8D4C0B]/10 dark:from-[#8e4700]/20 dark:to-[#8D4C0B]/20 rounded-full blur-3xl"></div>
       </div>
 
       {!showWelcome && !isProcessingGoogle && (
         <button
           onClick={onBack}
-          className="fixed top-6 left-6 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md hover:bg-[#FDAF03] hover:text-white rounded-full p-3 text-[#FDAF03] dark:text-gray-300 border border-[#FDAF03] dark:border-gray-600 shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
+          className="fixed top-6 left-6 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md hover:bg-[#8D4C0B] hover:text-white rounded-full p-3 text-[#8D4C0B] dark:text-gray-300 border border-[#8D4C0B] dark:border-gray-600 shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
           style={{ left: "1.5rem", right: "auto" }}
         >
           <FaArrowLeft size={18} />
@@ -57,8 +57,8 @@ export default function AuthLayout({
         className="w-full max-w-4xl bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl shadow-2xl rounded-3xl border border-white/50 dark:border-gray-700/50 relative overflow-hidden transition-colors duration-300"
       >
         {/* Form Background Pattern */}
-        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#FDAF03]/5 to-transparent rounded-bl-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-[#FDAF03]/5 to-transparent rounded-tr-3xl"></div>
+        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#8D4C0B]/5 to-transparent rounded-bl-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-[#8D4C0B]/5 to-transparent rounded-tr-3xl"></div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 min-h-[600px]">
           {/* Left Side - Brand Section with Tabs - Hide during Google processing */}
@@ -74,7 +74,7 @@ export default function AuthLayout({
                 <h1 className="text-3xl font-bold text-gray-900 dark:text-white leading-tight text-right">
                   مرحباً بك في
                   <br />
-                  <span className="text-[#FDAF03] block mt-2">فطير و عسل</span>
+                  <span className="text-[#8D4C0B] block mt-2">فطير و عسل</span>
                 </h1>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-right">
                   انضم إلى مجتمعنا واستمتع بأفضل الخدمات مع نظام أمان متكامل.
@@ -89,14 +89,14 @@ export default function AuthLayout({
                   onClick={() => handleTabChangeWithScroll("login")}
                   className={`flex items-center gap-4 px-6 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border ${
                     activeTab === "login"
-                      ? "bg-white dark:bg-gray-800 text-[#FDAF03] shadow-lg border-[#FDAF03]"
-                      : "text-gray-600 dark:text-gray-400 hover:text-[#FDAF03] hover:bg-white/50 dark:hover:bg-gray-700/50 border-gray-300 dark:border-gray-600 hover:border-[#FDAF03]/50"
+                      ? "bg-white dark:bg-gray-800 text-[#8D4C0B] shadow-lg border-[#8D4C0B]"
+                      : "text-gray-600 dark:text-gray-400 hover:text-[#8D4C0B] hover:bg-white/50 dark:hover:bg-gray-700/50 border-gray-300 dark:border-gray-600 hover:border-[#8D4C0B]/50"
                   }`}
                 >
                   <div
                     className={`w-2 h-8 rounded-full ${
                       activeTab === "login"
-                        ? "bg-[#FDAF03]"
+                        ? "bg-[#8D4C0B]"
                         : "bg-gray-300 dark:bg-gray-600"
                     }`}
                   ></div>
@@ -109,14 +109,14 @@ export default function AuthLayout({
                   onClick={() => handleTabChangeWithScroll("register")}
                   className={`flex items-center gap-4 px-6 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border ${
                     activeTab === "register"
-                      ? "bg-white dark:bg-gray-800 text-[#FDAF03] shadow-lg border-[#FDAF03]"
-                      : "text-gray-600 dark:text-gray-400 hover:text-[#FDAF03] hover:bg-white/50 dark:hover:bg-gray-700/50 border-gray-300 dark:border-gray-600 hover:border-[#FDAF03]/50"
+                      ? "bg-white dark:bg-gray-800 text-[#8D4C0B] shadow-lg border-[#8D4C0B]"
+                      : "text-gray-600 dark:text-gray-400 hover:text-[#8D4C0B] hover:bg-white/50 dark:hover:bg-gray-700/50 border-gray-300 dark:border-gray-600 hover:border-[#8D4C0B]/50"
                   }`}
                 >
                   <div
                     className={`w-2 h-8 rounded-full ${
                       activeTab === "register"
-                        ? "bg-[#FDAF03]"
+                        ? "bg-[#8D4C0B]"
                         : "bg-gray-300 dark:bg-gray-600"
                     }`}
                   ></div>
@@ -170,13 +170,13 @@ export default function AuthLayout({
               {/* Animated Dots */}
               <div className="flex justify-center mt-4">
                 <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                  <div className="w-3 h-3 bg-[#FDAF03] rounded-full animate-bounce"></div>
+                  <div className="w-3 h-3 bg-[#8D4C0B] rounded-full animate-bounce"></div>
                   <div
-                    className="w-3 h-3 bg-[#FDAF03] rounded-full animate-bounce"
+                    className="w-3 h-3 bg-[#8D4C0B] rounded-full animate-bounce"
                     style={{ animationDelay: "0.2s" }}
                   ></div>
                   <div
-                    className="w-3 h-3 bg-[#FDAF03] rounded-full animate-bounce"
+                    className="w-3 h-3 bg-[#8D4C0B] rounded-full animate-bounce"
                     style={{ animationDelay: "0.4s" }}
                   ></div>
                 </div>

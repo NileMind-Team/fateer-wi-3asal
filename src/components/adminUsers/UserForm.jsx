@@ -44,7 +44,7 @@ export default function UserForm({
           </h3>
           <button
             onClick={resetForm}
-            className="text-gray-500 hover:text-[#FDAF03] transition-colors duration-200 flex-shrink-0 ml-2 border border-gray-300 rounded-full p-1 hover:border-[#FDAF03]"
+            className="text-gray-500 hover:text-[#8D4C0B] transition-colors duration-200 flex-shrink-0 ml-2 border border-gray-300 rounded-full p-1 hover:border-[#8D4C0B]"
           >
             <FaTimes size={16} className="sm:size-5" />
           </button>
@@ -57,7 +57,7 @@ export default function UserForm({
                 الاسم الأول *
               </label>
               <div className="relative group" style={{ direction: "ltr" }}>
-                <FaUser className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#FDAF03] text-sm transition-all duration-300 group-focus-within:scale-110" />
+                <FaUser className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#8D4C0B] text-sm transition-all duration-300 group-focus-within:scale-110" />
                 <input
                   type="text"
                   name="firstName"
@@ -66,7 +66,7 @@ export default function UserForm({
                     setFormData({ ...formData, firstName: e.target.value })
                   }
                   required
-                  className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-3 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
+                  className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-3 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
                   placeholder="الاسم الأول"
                   style={{ textAlign: "right" }}
                 />
@@ -77,7 +77,7 @@ export default function UserForm({
                 الاسم الأخير *
               </label>
               <div className="relative group" style={{ direction: "ltr" }}>
-                <FaUser className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#FDAF03] text-sm transition-all duration-300 group-focus-within:scale-110" />
+                <FaUser className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#8D4C0B] text-sm transition-all duration-300 group-focus-within:scale-110" />
                 <input
                   type="text"
                   name="lastName"
@@ -86,7 +86,7 @@ export default function UserForm({
                     setFormData({ ...formData, lastName: e.target.value })
                   }
                   required
-                  className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-3 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
+                  className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-3 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
                   placeholder="الاسم الأخير"
                   style={{ textAlign: "right" }}
                 />
@@ -99,7 +99,7 @@ export default function UserForm({
               البريد الإلكتروني *
             </label>
             <div className="relative group" style={{ direction: "ltr" }}>
-              <FaEnvelope className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#FDAF03] text-sm transition-all duration-300 group-focus-within:scale-110" />
+              <FaEnvelope className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#8D4C0B] text-sm transition-all duration-300 group-focus-within:scale-110" />
               <input
                 type="email"
                 name="email"
@@ -108,7 +108,7 @@ export default function UserForm({
                   setFormData({ ...formData, email: e.target.value })
                 }
                 required
-                className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-3 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
+                className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-3 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
                 placeholder="البريد الإلكتروني"
                 style={{ textAlign: "right" }}
               />
@@ -120,7 +120,7 @@ export default function UserForm({
               رقم الهاتف
             </label>
             <div className="relative group" style={{ direction: "ltr" }}>
-              <FaPhone className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#FDAF03] text-sm transition-all duration-300 group-focus-within:scale-110" />
+              <FaPhone className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#8D4C0B] text-sm transition-all duration-300 group-focus-within:scale-110" />
               <input
                 type="tel"
                 name="phoneNumber"
@@ -128,7 +128,7 @@ export default function UserForm({
                 onChange={(e) =>
                   setFormData({ ...formData, phoneNumber: e.target.value })
                 }
-                className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-3 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
+                className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-3 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
                 placeholder="رقم الهاتف"
                 style={{ textAlign: "right" }}
               />
@@ -140,10 +140,10 @@ export default function UserForm({
               كلمة المرور *
             </label>
             <div className="relative group" style={{ direction: "ltr" }}>
-              <FaLock className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#FDAF03] text-sm transition-all duration-300 group-focus-within:scale-110" />
+              <FaLock className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#8D4C0B] text-sm transition-all duration-300 group-focus-within:scale-110" />
               <div
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-[#FDAF03] cursor-pointer transition-colors duration-200 text-sm border border-gray-300 rounded p-1 hover:border-[#FDAF03]"
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-[#8D4C0B] cursor-pointer transition-colors duration-200 text-sm border border-gray-300 rounded p-1 hover:border-[#8D4C0B]"
               >
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
               </div>
@@ -155,7 +155,7 @@ export default function UserForm({
                   setFormData({ ...formData, password: e.target.value })
                 }
                 required
-                className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-9 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
+                className="w-full border border-gray-300 bg-white text-black rounded-lg sm:rounded-xl pr-9 pl-9 py-2.5 sm:py-3 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-transparent transition-all duration-200 text-sm sm:text-base hover:border-gray-400"
                 placeholder="كلمة المرور"
                 style={{ textAlign: "right" }}
               />
@@ -176,7 +176,7 @@ export default function UserForm({
                     value={role.name}
                     checked={formData.roles.includes(role.name)}
                     onChange={() => handleSingleRoleSelection(role.name)}
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#FDAF03] bg-white border-gray-300 rounded focus:ring-[#FDAF03] focus:ring-2 border"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#8D4C0B] bg-white border-gray-300 rounded focus:ring-[#8D4C0B] focus:ring-2 border"
                   />
                   <label
                     htmlFor={`role-${role.name}`}
@@ -196,7 +196,7 @@ export default function UserForm({
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={resetForm}
-              className="flex-1 py-2.5 sm:py-3 border-2 border-[#FDAF03] text-[#FDAF03] rounded-lg sm:rounded-xl font-semibold hover:bg-[#FDAF03] hover:text-white transition-all duration-300 text-sm sm:text-base hover:border-[#e09900]"
+              className="flex-1 py-2.5 sm:py-3 border-2 border-[#8D4C0B] text-[#8D4C0B] rounded-lg sm:rounded-xl font-semibold hover:bg-[#8D4C0B] hover:text-white transition-all duration-300 text-sm sm:text-base hover:border-[#8e4700]"
             >
               إلغاء
             </motion.button>
@@ -207,7 +207,7 @@ export default function UserForm({
               disabled={!isFormValid()}
               className={`flex-1 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-semibold transition-all duration-300 text-sm sm:text-base flex items-center justify-center gap-1 sm:gap-2 border ${
                 isFormValid()
-                  ? "bg-[#FDAF03] text-white hover:bg-[#e09900] hover:shadow-xl hover:shadow-[#FDAF03]/25 border-[#FDAF03]"
+                  ? "bg-[#8D4C0B] text-white hover:bg-[#8e4700] hover:shadow-xl hover:shadow-[#8D4C0B]/25 border-[#8D4C0B]"
                   : "bg-gray-300 text-gray-500 cursor-not-allowed border-gray-400"
               }`}
             >

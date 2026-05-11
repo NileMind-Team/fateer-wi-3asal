@@ -28,13 +28,13 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-gradient-to-br from-gray-900 via-gray-800 to-[#1a1a1a] text-white relative overflow-hidden border-t border-[#FDAF03]"
+      className="bg-gradient-to-br from-gray-900 via-gray-800 to-[#1a1a1a] text-white relative overflow-hidden border-t border-[#8D4C0B]"
       dir="rtl"
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-r from-[#FDAF03]/10 to-[#000000]/10 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-gradient-to-r from-[#000000]/10 to-[#FDAF03]/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-gradient-to-r from-[#FDAF03]/5 to-[#000000]/5 rounded-full blur-3xl"></div>
+        <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-r from-[#8D4C0B]/10 to-[#000000]/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-gradient-to-r from-[#000000]/10 to-[#8D4C0B]/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-gradient-to-r from-[#8D4C0B]/5 to-[#000000]/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
@@ -52,7 +52,7 @@ const Footer = () => {
                   alt="Fateer Wi 3asal"
                   className="w-12 h-12 object-contain"
                 />
-                <span className="text-2xl font-bold bg-gradient-to-r from-[#FDAF03] to-[#FFFFFF] bg-clip-text text-transparent">
+                <span className="text-2xl font-bold bg-gradient-to-r from-[#8D4C0B] to-[#FFFFFF] bg-clip-text text-transparent">
                   فطير و عسل
                 </span>
               </div>
@@ -65,13 +65,13 @@ const Footer = () => {
 
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
-                <FaPhone className="text-[#FDAF03] text-sm" />
+                <FaPhone className="text-[#8D4C0B] text-sm" />
                 <span className="text-sm" dir="ltr">
                   +20 103 430 3024
                 </span>
               </div>
               <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
-                <FaMapMarkerAlt className="text-[#FDAF03] text-sm" />
+                <FaMapMarkerAlt className="text-[#8D4C0B] text-sm" />
                 <span className="text-sm">
                   <span className="block">
                     شارع الجامعة الحديثة - الحي الخامس
@@ -92,7 +92,7 @@ const Footer = () => {
           >
             <div className="text-center w-full">
               <h3 className="text-lg font-bold mb-4 flex items-center justify-center gap-2">
-                <FaClock className="text-[#FDAF03]" />
+                <FaClock className="text-[#8D4C0B]" />
                 ساعات العمل
               </h3>
 
@@ -189,7 +189,7 @@ const Footer = () => {
                   href="https://wa.me/201062485133"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#FDAF03] font-semibold hover:text-red-400 transition-colors duration-300"
+                  className="text-[#8D4C0B] font-semibold hover:text-red-400 transition-colors duration-300"
                 >
                   شركه TripleS للبرمجيات
                 </a>
@@ -209,7 +209,7 @@ const Footer = () => {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#FDAF03]"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#8D4C0B]"></div>
     </footer>
   );
 };

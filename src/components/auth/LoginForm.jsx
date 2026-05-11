@@ -24,7 +24,7 @@ export default function LoginForm({
       className="space-y-6 max-w-md mx-auto w-full"
     >
       <div className="text-center mb-2">
-        <h2 className="text-2xl font-bold text-[#FDAF03]">مرحباً بعودتك</h2>
+        <h2 className="text-2xl font-bold text-[#8D4C0B]">مرحباً بعودتك</h2>
         <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm">
           سجل الدخول إلى حسابك في فطير و عسل
         </p>
@@ -33,7 +33,7 @@ export default function LoginForm({
       <div className="space-y-4">
         <div className="relative group">
           <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-4">
-            <FaEnvelope className="text-[#FDAF03] text-lg transition-all duration-300 group-focus-within:scale-110" />
+            <FaEnvelope className="text-[#8D4C0B] text-lg transition-all duration-300 group-focus-within:scale-110" />
           </div>
           <input
             type="email"
@@ -41,13 +41,13 @@ export default function LoginForm({
             value={email}
             onChange={(e) => onEmailChange(e.target.value)}
             placeholder="البريد الإلكتروني"
-            className="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-4 py-3.5 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-transparent transition-all duration-200 group-hover:border-[#FDAF03]/50 text-right"
+            className="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-4 py-3.5 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-transparent transition-all duration-200 group-hover:border-[#8D4C0B]/50 text-right"
           />
         </div>
 
         <div className="relative group">
           <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-4">
-            <FaLock className="text-[#FDAF03] text-lg transition-all duration-300 group-focus-within:scale-110" />
+            <FaLock className="text-[#8D4C0B] text-lg transition-all duration-300 group-focus-within:scale-110" />
           </div>
           <input
             type={showPassword ? "text" : "password"}
@@ -55,12 +55,12 @@ export default function LoginForm({
             value={password}
             onChange={(e) => onPasswordChange(e.target.value)}
             placeholder="كلمة المرور"
-            className="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-12 py-3.5 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-transparent transition-all duration-200 group-hover:border-[#FDAF03]/50 text-right"
+            className="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-12 py-3.5 outline-none focus:ring-2 focus:ring-[#8D4C0B] focus:border-transparent transition-all duration-200 group-hover:border-[#8D4C0B]/50 text-right"
           />
           <div className="absolute inset-y-0 left-0 flex items-center justify-center pl-4">
             <div
               onClick={onToggleShowPassword}
-              className="text-gray-500 dark:text-gray-400 hover:text-[#FDAF03] cursor-pointer transition-all duration-200 hover:scale-110"
+              className="text-gray-500 dark:text-gray-400 hover:text-[#8D4C0B] cursor-pointer transition-all duration-200 hover:scale-110"
             >
               {showPassword ? <FaEyeSlash size={16} /> : <FaEye size={16} />}
             </div>
@@ -72,7 +72,7 @@ export default function LoginForm({
         <button
           type="button"
           onClick={onForgotPassword}
-          className="text-[#FDAF03] hover:text-[#e09900] underline text-sm font-medium transition-all duration-200"
+          className="text-[#8D4C0B] hover:text-[#8e4700] underline text-sm font-medium transition-all duration-200"
         >
           نسيت كلمة المرور؟
         </button>
@@ -85,7 +85,7 @@ export default function LoginForm({
         disabled={isDisabled}
         className={`w-full font-semibold py-3.5 rounded-xl transition-all duration-300 text-lg relative overflow-hidden border ${
           !isDisabled
-            ? "bg-[#FDAF03] text-white hover:bg-[#e09900] hover:shadow-xl border-[#FDAF03]"
+            ? "bg-[#8D4C0B] text-white hover:bg-[#8e4700] hover:shadow-xl border-[#8D4C0B]"
             : "bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed border-gray-400"
         }`}
       >

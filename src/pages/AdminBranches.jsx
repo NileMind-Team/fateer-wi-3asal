@@ -352,7 +352,7 @@ export default function AdminBranches() {
               icon: "error",
               title: "تم الرفض",
               text: "ليس لديك صلاحية للوصول إلى هذه الصفحة.",
-              confirmButtonColor: "#FDAF03",
+              confirmButtonColor: "#8D4C0B",
               timer: 2500,
               showConfirmButton: false,
             });
@@ -382,7 +382,7 @@ export default function AdminBranches() {
             icon: "error",
             title: "تم الرفض",
             text: errorText || "فشل في التحقق من صلاحياتك.",
-            confirmButtonColor: "#FDAF03",
+            confirmButtonColor: "#8D4C0B",
             timer: 2500,
             showConfirmButton: false,
           });
@@ -595,7 +595,7 @@ export default function AdminBranches() {
   if (isLoadingAuth || isLoadingData) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-[#fff5f0] to-[#fff0e0] dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 px-4">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#FDAF03]"></div>
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#8D4C0B]"></div>
       </div>
     );
   }
@@ -618,15 +618,15 @@ export default function AdminBranches() {
         dir="rtl"
       >
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -left-10 sm:-left-20 -top-10 sm:-top-20 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-gradient-to-r from-[#FDAF03]/10 to-[#e09900]/10 rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
-          <div className="absolute -right-10 sm:-right-20 -bottom-10 sm:-bottom-20 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-gradient-to-r from-[#e09900]/10 to-[#FDAF03]/10 rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
+          <div className="absolute -left-10 sm:-left-20 -top-10 sm:-top-20 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-gradient-to-r from-[#8D4C0B]/10 to-[#8e4700]/10 rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
+          <div className="absolute -right-10 sm:-right-20 -bottom-10 sm:-bottom-20 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-gradient-to-r from-[#8e4700]/10 to-[#8D4C0B]/10 rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
         </div>
 
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           onClick={() => navigate(-1)}
-          className="fixed top-3 sm:top-4 left-3 sm:left-4 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md hover:bg-[#FDAF03] hover:text-white rounded-full p-2 sm:p-3 text-[#FDAF03] dark:text-gray-300 border border-[#FDAF03] dark:border-gray-600 shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl group"
+          className="fixed top-3 sm:top-4 left-3 sm:left-4 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md hover:bg-[#8D4C0B] hover:text-white rounded-full p-2 sm:p-3 text-[#8D4C0B] dark:text-gray-300 border border-[#8D4C0B] dark:border-gray-600 shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl group"
         >
           <FaArrowLeft
             size={14}
@@ -653,7 +653,7 @@ export default function AdminBranches() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleAddNewBranch}
-                className="flex items-center gap-2 bg-[#FDAF03] text-white px-4 sm:px-5 md:px-6 py-3 sm:py-3 md:py-4 rounded-xl sm:rounded-2xl font-semibold shadow-2xl sm:shadow-3xl hover:shadow-4xl hover:shadow-[#FDAF03]/50 transition-all duration-300 text-sm sm:text-base md:text-lg border-2 border-white whitespace-nowrap transform translate-y-2 hover:bg-[#e09900]"
+                className="flex items-center gap-2 bg-[#8D4C0B] text-white px-4 sm:px-5 md:px-6 py-3 sm:py-3 md:py-4 rounded-xl sm:rounded-2xl font-semibold shadow-2xl sm:shadow-3xl hover:shadow-4xl hover:shadow-[#8D4C0B]/50 transition-all duration-300 text-sm sm:text-base md:text-lg border-2 border-white whitespace-nowrap transform translate-y-2 hover:bg-[#8e4700]"
               >
                 <FaPlus className="text-sm sm:text-base md:text-lg" />
                 <span>إضافة فرع جديد</span>
@@ -712,7 +712,7 @@ export default function AdminBranches() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={handleAddNewBranch}
-                        className="flex items-center gap-2 bg-[#FDAF03] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base mx-auto border border-[#FDAF03] hover:bg-[#e09900]"
+                        className="flex items-center gap-2 bg-[#8D4C0B] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base mx-auto border border-[#8D4C0B] hover:bg-[#8e4700]"
                       >
                         <FaPlus className="text-xs sm:text-sm" />
                         <span>أضف أول فرع لك</span>
