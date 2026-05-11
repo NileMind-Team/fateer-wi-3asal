@@ -10,7 +10,7 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #e41e26, #fdb913);
+  background: linear-gradient(135deg, #ffaf01, #fdb913);
   border-radius: 8px;
   border: 2px solid #f8fafc;
 }
@@ -29,11 +29,11 @@
 
 .custom-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: #e41e26 #f8fafc;
+  scrollbar-color: #ffaf01 #f8fafc;
 }
 
 .dark .custom-scrollbar {
-  scrollbar-color: #e41e26 #374151;
+  scrollbar-color: #ffaf01 #374151;
 }
 
 @media (max-width: 640px) {

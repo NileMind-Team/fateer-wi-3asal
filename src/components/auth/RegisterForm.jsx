@@ -51,7 +51,7 @@ export default function RegisterForm({
       className="space-y-6 max-w-md mx-auto w-full"
     >
       <div className="text-center mb-2">
-        <h2 className="text-2xl font-bold text-[#E41E26]">إنشاء حساب جديد</h2>
+        <h2 className="text-2xl font-bold text-[#FDAF03]">إنشاء حساب جديد</h2>
         <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm">
           انضم إلى فطير و عسل وابدأ رحلتك
         </p>
@@ -61,7 +61,7 @@ export default function RegisterForm({
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div className="relative group">
             <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-3">
-              <FaUser className="text-[#E41E26] text-lg transition-all duration-300 group-focus-within:scale-110" />
+              <FaUser className="text-[#FDAF03] text-lg transition-all duration-300 group-focus-within:scale-110" />
             </div>
             <input
               type="text"
@@ -70,13 +70,13 @@ export default function RegisterForm({
               value={formData.firstName}
               onChange={(e) => onInputChange(e.target.name, e.target.value)}
               placeholder="الاسم الأول"
-              className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-10 pl-3 py-3.5 outline-none focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 group-hover:border-[#E41E26] text-sm text-right"
+              className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-10 pl-3 py-3.5 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 group-hover:border-[#FDAF03] text-sm text-right"
             />
           </div>
 
           <div className="relative group">
             <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-3">
-              <FaUser className="text-[#E41E26] text-lg transition-all duration-300 group-focus-within:scale-110" />
+              <FaUser className="text-[#FDAF03] text-lg transition-all duration-300 group-focus-within:scale-110" />
             </div>
             <input
               type="text"
@@ -85,14 +85,14 @@ export default function RegisterForm({
               value={formData.lastName}
               onChange={(e) => onInputChange(e.target.name, e.target.value)}
               placeholder="الاسم الأخير"
-              className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-10 pl-3 py-3.5 outline-none focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 group-hover:border-[#E41E26] text-sm text-right"
+              className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-10 pl-3 py-3.5 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 group-hover:border-[#FDAF03] text-sm text-right"
             />
           </div>
         </div>
 
         <div className="relative group">
           <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-4">
-            <FaEnvelope className="text-[#E41E26] text-lg transition-all duration-300 group-focus-within:scale-110" />
+            <FaEnvelope className="text-[#FDAF03] text-lg transition-all duration-300 group-focus-within:scale-110" />
           </div>
           <input
             type="email"
@@ -101,13 +101,13 @@ export default function RegisterForm({
             value={formData.email}
             onChange={(e) => onInputChange(e.target.name, e.target.value)}
             placeholder="البريد الإلكتروني"
-            className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-4 py-3.5 outline-none focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 group-hover:border-[#E41E26] text-right"
+            className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-4 py-3.5 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 group-hover:border-[#FDAF03] text-right"
           />
         </div>
 
         <div className="relative group">
           <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-4">
-            <FaPhone className="text-[#E41E26] text-lg transition-all duration-300 group-focus-within:scale-110" />
+            <FaPhone className="text-[#FDAF03] text-lg transition-all duration-300 group-focus-within:scale-110" />
           </div>
           <input
             type="tel"
@@ -116,13 +116,13 @@ export default function RegisterForm({
             value={formData.phoneNumber}
             onChange={(e) => onInputChange(e.target.name, e.target.value)}
             placeholder="رقم الهاتف"
-            className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-4 py-3.5 outline-none focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 group-hover:border-[#E41E26] text-right"
+            className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-4 py-3.5 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 group-hover:border-[#FDAF03] text-right"
           />
         </div>
 
         <div className="relative group">
           <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-4">
-            <FaLock className="text-[#E41E26] text-lg transition-all duration-300 group-focus-within:scale-110" />
+            <FaLock className="text-[#FDAF03] text-lg transition-all duration-300 group-focus-within:scale-110" />
           </div>
           <input
             type={showRegisterPassword ? "text" : "password"}
@@ -131,12 +131,12 @@ export default function RegisterForm({
             value={formData.password}
             onChange={(e) => onInputChange(e.target.name, e.target.value)}
             placeholder="كلمة المرور"
-            className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-12 py-3.5 outline-none focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 group-hover:border-[#E41E26] text-right"
+            className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-12 py-3.5 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 group-hover:border-[#FDAF03] text-right"
           />
           <div className="absolute inset-y-0 left-0 flex items-center justify-center pl-4">
             <div
               onClick={onToggleRegisterPassword}
-              className="text-gray-500 dark:text-gray-400 hover:text-[#E41E26] cursor-pointer transition-all duration-200 hover:scale-110"
+              className="text-gray-500 dark:text-gray-400 hover:text-[#FDAF03] cursor-pointer transition-all duration-200 hover:scale-110"
             >
               {showRegisterPassword ? (
                 <FaEyeSlash size={16} />
@@ -149,7 +149,7 @@ export default function RegisterForm({
 
         <div className="relative group">
           <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-4">
-            <FaLock className="text-[#E41E26] text-lg transition-all duration-300 group-focus-within:scale-110" />
+            <FaLock className="text-[#FDAF03] text-lg transition-all duration-300 group-focus-within:scale-110" />
           </div>
           <input
             type={showConfirmPassword ? "text" : "password"}
@@ -158,12 +158,12 @@ export default function RegisterForm({
             value={formData.confirmPassword}
             onChange={(e) => onInputChange(e.target.name, e.target.value)}
             placeholder="تأكيد كلمة المرور"
-            className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-12 py-3.5 outline-none focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 group-hover:border-[#E41E26] text-right"
+            className="w-full border-2 border-gray-300 bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl pr-12 pl-12 py-3.5 outline-none focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 group-hover:border-[#FDAF03] text-right"
           />
           <div className="absolute inset-y-0 left-0 flex items-center justify-center pl-4">
             <div
               onClick={onToggleConfirmPassword}
-              className="text-gray-500 dark:text-gray-400 hover:text-[#E41E26] cursor-pointer transition-all duration-200 hover:scale-110"
+              className="text-gray-500 dark:text-gray-400 hover:text-[#FDAF03] cursor-pointer transition-all duration-200 hover:scale-110"
             >
               {showConfirmPassword ? (
                 <FaEyeSlash size={16} />
@@ -177,7 +177,7 @@ export default function RegisterForm({
 
       {/* Password Validation - Responsive */}
       <div className="bg-red-50 dark:bg-gray-700 p-3 rounded-xl border-2 border-gray-300 dark:border-gray-600 space-y-2 transition-colors duration-300">
-        <p className="text-sm font-semibold text-[#E41E26] text-right">
+        <p className="text-sm font-semibold text-[#FDAF03] text-right">
           متطلبات كلمة المرور:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
@@ -196,7 +196,7 @@ export default function RegisterForm({
         disabled={!isFormValid || isLoading}
         className={`w-full font-semibold py-3.5 rounded-xl transition-all duration-300 text-lg relative overflow-hidden border-2 ${
           isFormValid
-            ? "bg-[#E41E26] text-white hover:bg-[#c91c23] hover:shadow-lg hover:shadow-[#E41E26]/25 border-[#E41E26]"
+            ? "bg-[#FDAF03] text-white hover:bg-[#e09900] hover:shadow-lg hover:shadow-[#FDAF03]/25 border-[#FDAF03]"
             : "bg-gray-300 text-gray-500 cursor-not-allowed border-gray-300"
         }`}
       >

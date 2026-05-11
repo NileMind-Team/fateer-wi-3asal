@@ -179,7 +179,7 @@ export default function MyOrders() {
         icon: type,
         title: title,
         text: text,
-        confirmButtonColor: options.confirmButtonColor || "#E41E26",
+        confirmButtonColor: options.confirmButtonColor || "#FDAF03",
         timer: options.timer || 2500,
         showConfirmButton:
           options.showConfirmButton !== undefined
@@ -824,7 +824,7 @@ export default function MyOrders() {
       text: "هل تريد إلغاء هذا الطلب؟",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#E41E26",
+      confirmButtonColor: "#FDAF03",
       cancelButtonColor: "#6B7280",
       confirmButtonText: "نعم، إلغِه!",
       cancelButtonText: "لا",
@@ -1577,8 +1577,8 @@ window.onload = function () {
 
   if (loading && isInitialLoad) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-[#fff5f5] to-[#ffe5e5] dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 px-4">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#E41E26]"></div>
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-[#fff5f0] to-[#fff0e0] dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 px-4">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#FDAF03]"></div>
       </div>
     );
   }
@@ -1593,7 +1593,7 @@ window.onload = function () {
         />
       </Helmet>
       <div
-        className={`min-h-screen bg-gradient-to-br from-white via-[#fff5f5] to-[#ffe5e5] dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 px-3 sm:px-4 py-4 sm:py-8 transition-colors duration-300`}
+        className={`min-h-screen bg-gradient-to-br from-white via-[#fff5f0] to-[#fff0e0] dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 px-3 sm:px-4 py-4 sm:py-8 transition-colors duration-300`}
       >
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -1606,7 +1606,7 @@ window.onload = function () {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate(-1)}
-                className="bg-white/80 backdrop-blur-md rounded-full p-2 sm:p-3 text-[#E41E26] hover:bg-[#E41E26] hover:text-white transition-all duration-300 shadow-lg dark:bg-gray-800/80 dark:text-gray-200 dark:hover:bg-[#E41E26] border-2 border-white"
+                className="bg-white/80 backdrop-blur-md rounded-full p-2 sm:p-3 text-[#FDAF03] hover:bg-[#FDAF03] hover:text-white transition-all duration-300 shadow-lg dark:bg-gray-800/80 dark:text-gray-200 dark:hover:bg-[#FDAF03] border-2 border-white"
               >
                 <FaArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
               </motion.button>
@@ -1622,7 +1622,7 @@ window.onload = function () {
               </div>
             </div>
             <div className="text-right self-end sm:self-auto">
-              <div className="text-lg sm:text-xl md:text-2xl font-bold text-[#E41E26]">
+              <div className="text-lg sm:text-xl md:text-2xl font-bold text-[#FDAF03]">
                 {totalItems} طلب
               </div>
               <div className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
@@ -1654,10 +1654,10 @@ window.onload = function () {
                           openDropdown === "status" ? null : "status",
                         )
                       }
-                      className="w-full flex items-center justify-between border-2 border-gray-300 bg-white rounded-xl px-4 py-3 text-black focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#E41E26]"
+                      className="w-full flex items-center justify-between border-2 border-gray-300 bg-white rounded-xl px-4 py-3 text-black focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#FDAF03]"
                     >
                       <span className="flex items-center gap-2">
-                        <FaFilter className="text-[#E41E26]" />
+                        <FaFilter className="text-[#FDAF03]" />
                         {filter === "all"
                           ? "جميع الحالات"
                           : getStatusText(filter)}
@@ -1668,7 +1668,7 @@ window.onload = function () {
                         }}
                         transition={{ duration: 0.3 }}
                       >
-                        <FaChevronDown className="text-[#E41E26]" />
+                        <FaChevronDown className="text-[#FDAF03]" />
                       </motion.div>
                     </button>
 
@@ -1725,10 +1725,10 @@ window.onload = function () {
                             openDropdown === "user" ? null : "user",
                           )
                         }
-                        className="w-full flex items-center justify-between border-2 border-gray-300 bg-white rounded-xl px-4 py-3 text-black focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#E41E26]"
+                        className="w-full flex items-center justify-between border-2 border-gray-300 bg-white rounded-xl px-4 py-3 text-black focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#FDAF03]"
                       >
                         <span className="flex items-center gap-2">
-                          <FaUser className="text-[#E41E26]" />
+                          <FaUser className="text-[#FDAF03]" />
                           {selectedUserId
                             ? users.find((u) => u.id === selectedUserId)
                                 ?.firstName +
@@ -1743,7 +1743,7 @@ window.onload = function () {
                           }}
                           transition={{ duration: 0.3 }}
                         >
-                          <FaChevronDown className="text-[#E41E26]" />
+                          <FaChevronDown className="text-[#FDAF03]" />
                         </motion.div>
                       </button>
 
@@ -1793,7 +1793,7 @@ window.onload = function () {
                                           className="w-full h-full object-cover"
                                         />
                                       ) : (
-                                        <div className="w-full h-full flex items-center justify-center bg-[#E41E26] text-white text-xs">
+                                        <div className="w-full h-full flex items-center justify-center bg-[#FDAF03] text-white text-xs">
                                           {user.firstName?.charAt(0)}
                                           {user.lastName?.charAt(0)}
                                         </div>
@@ -1832,10 +1832,10 @@ window.onload = function () {
                             openDropdown === "branch" ? null : "branch",
                           )
                         }
-                        className="w-full flex items-center justify-between border-2 border-gray-300 bg-white rounded-xl px-4 py-3 text-black focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#E41E26]"
+                        className="w-full flex items-center justify-between border-2 border-gray-300 bg-white rounded-xl px-4 py-3 text-black focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#FDAF03]"
                       >
                         <span className="flex items-center gap-2">
-                          <FaStore className="text-[#E41E26]" />
+                          <FaStore className="text-[#FDAF03]" />
                           {selectedBranchId
                             ? branches.find(
                                 (b) => b.id.toString() === selectedBranchId,
@@ -1848,7 +1848,7 @@ window.onload = function () {
                           }}
                           transition={{ duration: 0.3 }}
                         >
-                          <FaChevronDown className="text-[#E41E26]" />
+                          <FaChevronDown className="text-[#FDAF03]" />
                         </motion.div>
                       </button>
 
@@ -1887,7 +1887,7 @@ window.onload = function () {
                                   className="px-4 py-3 hover:bg-red-50 dark:hover:bg-gray-600 cursor-pointer text-gray-700 transition-all text-sm sm:text-base border-b border-gray-200 last:border-b-0 dark:text-gray-300 dark:border-gray-600"
                                 >
                                   <div className="flex items-center gap-3">
-                                    <div className="w-8 h-8 rounded-full bg-[#E41E26] flex items-center justify-center text-white text-xs font-bold border border-white">
+                                    <div className="w-8 h-8 rounded-full bg-[#FDAF03] flex items-center justify-center text-white text-xs font-bold border border-white">
                                       {branch.name.charAt(0)}
                                     </div>
                                     <div className="font-medium">
@@ -1920,7 +1920,7 @@ window.onload = function () {
                         onChange={(e) => {
                           handleDateRangeChange("start", e.target.value);
                         }}
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#E41E26]"
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#FDAF03]"
                       />
                     </div>
                     <div>
@@ -1933,7 +1933,7 @@ window.onload = function () {
                         onChange={(e) => {
                           handleDateRangeChange("end", e.target.value);
                         }}
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#E41E26]"
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#FDAF03]"
                       />
                     </div>
                   </div>
@@ -1949,7 +1949,7 @@ window.onload = function () {
                         onChange={(e) => {
                           handleDateRangeChange("start", e.target.value);
                         }}
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#E41E26]"
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#FDAF03]"
                       />
                     </div>
                     <div>
@@ -1962,7 +1962,7 @@ window.onload = function () {
                         onChange={(e) => {
                           handleDateRangeChange("end", e.target.value);
                         }}
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#E41E26]"
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-white text-black focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:border-[#FDAF03]"
                       />
                     </div>
                   </div>
@@ -1975,7 +1975,7 @@ window.onload = function () {
                       filter !== "all") && (
                       <button
                         onClick={clearAllFilters}
-                        className="w-full sm:w-auto px-4 py-3 bg-[#E41E26] text-white rounded-xl hover:bg-[#c91c23] transition-colors duration-200 text-sm sm:text-base whitespace-nowrap flex items-center justify-center gap-2 border-2 border-white"
+                        className="w-full sm:w-auto px-4 py-3 bg-[#FDAF03] text-white rounded-xl hover:bg-[#e09900] transition-colors duration-200 text-sm sm:text-base whitespace-nowrap flex items-center justify-center gap-2 border-2 border-white"
                       >
                         <FaTrash className="w-3 h-3 sm:w-4 sm:h-4" />
                         مسح الكل
@@ -1995,7 +1995,7 @@ window.onload = function () {
               exit={{ opacity: 0 }}
               className="flex flex-col items-center justify-center py-12 bg-white/80 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl mb-6 sm:mb-8 dark:bg-gray-800/80 border-2 border-gray-300"
             >
-              <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#E41E26] mb-4"></div>
+              <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#FDAF03] mb-4"></div>
             </motion.div>
           )}
 
@@ -2017,7 +2017,7 @@ window.onload = function () {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -20 }}
                       transition={{ delay: index * 0.1 }}
-                      className="bg-white/90 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl p-4 sm:p-6 cursor-pointer hover:shadow-2xl transition-all duration-300 dark:bg-gray-800/90 border-2 border-gray-300 hover:border-[#E41E26]"
+                      className="bg-white/90 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl p-4 sm:p-6 cursor-pointer hover:shadow-2xl transition-all duration-300 dark:bg-gray-800/90 border-2 border-gray-300 hover:border-[#FDAF03]"
                       onClick={() => handleOrderClick(order)}
                     >
                       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
@@ -2113,7 +2113,7 @@ window.onload = function () {
                           {/* Customer/Delivery Info */}
                           <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                             <div className="flex items-center gap-2">
-                              <FaMapMarkerAlt className="text-[#E41E26] flex-shrink-0 w-3 h-3" />
+                              <FaMapMarkerAlt className="text-[#FDAF03] flex-shrink-0 w-3 h-3" />
                               <span className="truncate">
                                 {order.location
                                   ? order.location.streetName ||
@@ -2123,7 +2123,7 @@ window.onload = function () {
                             </div>
                             {order.location?.phoneNumber && (
                               <div className="flex items-center gap-2 sm:ml-4">
-                                <FaPhone className="text-[#E41E26] flex-shrink-0 w-3 h-3" />
+                                <FaPhone className="text-[#FDAF03] flex-shrink-0 w-3 h-3" />
                                 <span>{order.location.phoneNumber}</span>
                               </div>
                             )}
@@ -2133,7 +2133,7 @@ window.onload = function () {
                         {/* Total and Action */}
                         <div className="flex flex-row sm:flex-col items-center justify-between sm:items-end lg:items-start gap-3 sm:gap-2 lg:gap-3 pt-3 sm:pt-0 border-t sm:border-t-0 border-gray-200 dark:border-gray-700">
                           <div className="text-left sm:text-right lg:text-left">
-                            <div className="text-lg sm:text-xl font-bold text-[#E41E26]">
+                            <div className="text-lg sm:text-xl font-bold text-[#FDAF03]">
                               ج.م {finalTotal.toFixed(2)}
                             </div>
                             <div className="text-sm text-gray-600 dark:text-gray-400 hidden sm:block">
@@ -2147,7 +2147,7 @@ window.onload = function () {
                             </div>
                           </div>
 
-                          <div className="flex items-center gap-2 text-[#E41E26]">
+                          <div className="flex items-center gap-2 text-[#FDAF03]">
                             {getStatusIcon(order.status)}
                             <span className="text-sm font-semibold whitespace-nowrap">
                               عرض التفاصيل
@@ -2186,7 +2186,7 @@ window.onload = function () {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => navigate("/")}
-                  className="bg-[#E41E26] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-xl font-bold hover:bg-[#c91c23] transition-all duration-300 text-sm sm:text-base border-2 border-white"
+                  className="bg-[#FDAF03] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-xl font-bold hover:bg-[#e09900] transition-all duration-300 text-sm sm:text-base border-2 border-white"
                 >
                   ابدأ التسوق
                 </motion.button>
@@ -2226,7 +2226,7 @@ window.onload = function () {
                           onClick={() => handlePageChange(pageNum)}
                           className={`px-3 sm:px-4 py-1 sm:py-2 rounded-xl font-semibold transition-all border-2 ${
                             currentPage === pageNum
-                              ? "bg-[#E41E26] text-white shadow-lg border-[#E41E26]"
+                              ? "bg-[#FDAF03] text-white shadow-lg border-[#FDAF03]"
                               : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-gray-300 dark:border-gray-600"
                           }`}
                         >
@@ -2278,7 +2278,7 @@ window.onload = function () {
             >
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl w-full max-w-md overflow-visible mx-auto relative border-2 border-gray-300">
                 {/* Modal Header */}
-                <div className="bg-[#E41E26] p-5 sm:p-6 border-b border-white">
+                <div className="bg-[#FDAF03] p-5 sm:p-6 border-b border-white">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <FaSyncAlt className="text-white text-xl sm:text-2xl" />
@@ -2326,10 +2326,10 @@ window.onload = function () {
                           onClick={() =>
                             setStatusDropdownOpen(!statusDropdownOpen)
                           }
-                          className="status-dropdown-trigger w-full flex items-center justify-between border-2 border-gray-300 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-xl px-4 py-3 text-black dark:text-white focus:ring-2 focus:ring-[#E41E26] focus:border-[#E41E26] transition-all duration-200 hover:border-[#E41E26]"
+                          className="status-dropdown-trigger w-full flex items-center justify-between border-2 border-gray-300 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-xl px-4 py-3 text-black dark:text-white focus:ring-2 focus:ring-[#FDAF03] focus:border-[#FDAF03] transition-all duration-200 hover:border-[#FDAF03]"
                         >
                           <span className="flex items-center gap-2">
-                            <FaFilter className="text-[#E41E26]" />
+                            <FaFilter className="text-[#FDAF03]" />
                             {newStatus
                               ? getStatusText(newStatus)
                               : "اختر حالة جديدة"}
@@ -2338,7 +2338,7 @@ window.onload = function () {
                             animate={{ rotate: statusDropdownOpen ? 180 : 0 }}
                             transition={{ duration: 0.3 }}
                           >
-                            <FaChevronDown className="text-[#E41E26]" />
+                            <FaChevronDown className="text-[#FDAF03]" />
                           </motion.div>
                         </button>
 
@@ -2432,7 +2432,7 @@ window.onload = function () {
                       whileTap={{ scale: 0.98 }}
                       onClick={submitStatusUpdate}
                       disabled={updatingStatus || !newStatus}
-                      className="flex-1 px-4 py-3 bg-[#E41E26] text-white rounded-xl font-semibold hover:bg-[#c91c23] transition-all disabled:opacity-50 disabled:cursor-not-allowed border-2 border-[#E41E26]"
+                      className="flex-1 px-4 py-3 bg-[#FDAF03] text-white rounded-xl font-semibold hover:bg-[#e09900] transition-all disabled:opacity-50 disabled:cursor-not-allowed border-2 border-[#FDAF03]"
                     >
                       {updatingStatus ? (
                         <div className="flex items-center justify-center gap-2">
@@ -2474,7 +2474,7 @@ window.onload = function () {
                 {/* Modal Header */}
                 <div className="flex items-center justify-between p-4 sm:p-6 border-b-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800">
                   <div className="flex items-center gap-3 min-w-0">
-                    <FaReceipt className="text-[#E41E26] text-xl sm:text-2xl flex-shrink-0" />
+                    <FaReceipt className="text-[#FDAF03] text-xl sm:text-2xl flex-shrink-0" />
                     <div className="min-w-0">
                       <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-200 truncate">
                         طلب #{selectedOrder.orderNumber}
@@ -2506,14 +2506,14 @@ window.onload = function () {
                 <div className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6">
                   {loadingOrderDetails ? (
                     <div className="flex flex-col items-center justify-center h-48 sm:h-64">
-                      <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-t-4 border-b-4 border-[#E41E26] mb-4"></div>
+                      <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-t-4 border-b-4 border-[#FDAF03] mb-4"></div>
                     </div>
                   ) : orderDetails ? (
                     <div className="space-y-4 sm:space-y-6">
                       {/* Customer Information */}
                       <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5 border-2 border-gray-300">
                         <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2 text-base sm:text-lg">
-                          <FaUser className="text-[#E41E26] flex-shrink-0" />
+                          <FaUser className="text-[#FDAF03] flex-shrink-0" />
                           معلومات العميل
                         </h3>
                         <div className="space-y-2 sm:space-y-3">
@@ -2591,12 +2591,12 @@ window.onload = function () {
                         orderDetails.deliveryFee?.branchId && (
                           <div className="bg-gray-50 dark:bg-gray-700/50 border-2 border-gray-300 dark:border-gray-600 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5">
                             <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2 text-base sm:text-lg">
-                              <FaStore className="text-[#E41E26] flex-shrink-0" />
+                              <FaStore className="text-[#FDAF03] flex-shrink-0" />
                               معلومات الفرع
                             </h3>
                             <div className="space-y-2 sm:space-y-3">
                               <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-full bg-[#E41E26] flex items-center justify-center text-white font-bold border-2 border-white">
+                                <div className="w-10 h-10 rounded-full bg-[#FDAF03] flex items-center justify-center text-white font-bold border-2 border-white">
                                   {branches
                                     .find(
                                       (b) =>
@@ -2628,7 +2628,7 @@ window.onload = function () {
                       {orderDetails.items && orderDetails.items.length > 0 && (
                         <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5 border-2 border-gray-300">
                           <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2 text-base sm:text-lg">
-                            <FaBox className="text-[#E41E26] flex-shrink-0" />
+                            <FaBox className="text-[#FDAF03] flex-shrink-0" />
                             العناصر المطلوبة ({orderDetails.items.length})
                           </h3>
                           <div className="space-y-3 sm:space-y-4">
@@ -2832,11 +2832,11 @@ window.onload = function () {
                                         </span>
                                       </div>
                                       <div className="col-span-full flex items-center gap-2 pt-2 border-t-2 border-gray-300 dark:border-gray-700">
-                                        <FaInfoCircle className="text-[#E41E26] w-3 h-3" />
+                                        <FaInfoCircle className="text-[#FDAF03] w-3 h-3" />
                                         <span className="text-gray-600 dark:text-gray-400">
                                           السعر النهائي (بعد الخصم والاضافات):
                                         </span>
-                                        <span className="font-bold text-[#E41E26]">
+                                        <span className="font-bold text-[#FDAF03]">
                                           ج.م {itemFinalPrice.toFixed(2)}
                                         </span>
                                       </div>
@@ -2940,7 +2940,7 @@ window.onload = function () {
                               رسوم التوصيل:
                             </span>
                             <span className="font-medium text-sm sm:text-base text-gray-800 dark:text-gray-200 flex items-center gap-1">
-                              <FaTruck className="text-[#E41E26]" />
+                              <FaTruck className="text-[#FDAF03]" />
                               ج.م{" "}
                               {(
                                 orderDetails.calculatedPrices?.deliveryFee ||
@@ -2967,7 +2967,7 @@ window.onload = function () {
                               <span className="text-gray-800 dark:text-gray-200">
                                 الإجمالي النهائي:
                               </span>
-                              <span className="text-[#E41E26]">
+                              <span className="text-[#FDAF03]">
                                 ج.م{" "}
                                 {(
                                   orderDetails.calculatedPrices?.totalWithFee ||
@@ -3015,7 +3015,7 @@ window.onload = function () {
 
                         <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5 border-2 border-gray-300">
                           <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2 text-sm sm:text-base">
-                            <FaInfoCircle className="text-[#E41E26] flex-shrink-0" />
+                            <FaInfoCircle className="text-[#FDAF03] flex-shrink-0" />
                             معلومات إضافية
                           </h3>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
@@ -3159,7 +3159,7 @@ window.onload = function () {
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               className="fixed inset-0 z-[201] flex items-center justify-center"
             >
-              <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-t-4 border-b-4 border-[#E41E26]"></div>
+              <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-t-4 border-b-4 border-[#FDAF03]"></div>
             </motion.div>
           </>
         )}

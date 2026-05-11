@@ -150,7 +150,7 @@ export default function AdminUsers() {
         icon: "warning",
         title: title || "تحذير",
         text: message,
-        confirmButtonColor: "#E41E26",
+        confirmButtonColor: "#FDAF03",
         background: "#ffffff",
         color: "#000000",
         showConfirmButton: false,
@@ -281,8 +281,8 @@ export default function AdminUsers() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-[#fff5f5] to-[#ffe5e5] px-4">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#E41E26]"></div>
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-[#fff5f0] to-[#fff0e0] px-4">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#FDAF03]"></div>
       </div>
     );
   }
@@ -303,19 +303,19 @@ export default function AdminUsers() {
         />
       </Helmet>
       <div
-        className={`min-h-screen bg-gradient-to-br from-white via-[#fff5f5] to-[#ffe5e5] px-3 sm:px-4 md:px-6 py-3 sm:py-6 relative font-sans overflow-hidden transition-colors duration-300`}
+        className={`min-h-screen bg-gradient-to-br from-white via-[#fff5f0] to-[#fff0e0] px-3 sm:px-4 md:px-6 py-3 sm:py-6 relative font-sans overflow-hidden transition-colors duration-300`}
         style={{ direction: "rtl" }}
       >
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -left-10 sm:-left-20 -top-10 sm:-top-20 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-gradient-to-r from-[#E41E26]/10 to-transparent rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
-          <div className="absolute -right-10 sm:-right-20 -bottom-10 sm:-bottom-20 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-gradient-to-r from-transparent to-[#E41E26]/10 rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
+          <div className="absolute -left-10 sm:-left-20 -top-10 sm:-top-20 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-gradient-to-r from-[#FDAF03]/10 to-transparent rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
+          <div className="absolute -right-10 sm:-right-20 -bottom-10 sm:-bottom-20 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-gradient-to-r from-transparent to-[#FDAF03]/10 rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
         </div>
 
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           onClick={() => navigate(-1)}
-          className="fixed top-3 sm:top-4 left-3 sm:left-4 z-50 bg-white/80 backdrop-blur-md hover:bg-[#E41E26] hover:text-white rounded-full p-2 sm:p-3 text-[#E41E26] border-2 border-[#E41E26] shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl group"
+          className="fixed top-3 sm:top-4 left-3 sm:left-4 z-50 bg-white/80 backdrop-blur-md hover:bg-[#FDAF03] hover:text-white rounded-full p-2 sm:p-3 text-[#FDAF03] border-2 border-[#FDAF03] shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl group"
         >
           <FaArrowLeft
             size={14}
@@ -342,7 +342,7 @@ export default function AdminUsers() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleAddNewUser}
-                className="flex items-center gap-2 bg-[#E41E26] text-white px-4 sm:px-5 md:px-6 py-3 sm:py-3 md:py-4 rounded-xl sm:rounded-2xl font-semibold shadow-2xl sm:shadow-3xl hover:shadow-4xl hover:shadow-[#E41E26]/50 transition-all duration-300 text-sm sm:text-base md:text-lg border-2 border-white whitespace-nowrap transform translate-y-2 hover:bg-[#c91c23]"
+                className="flex items-center gap-2 bg-[#FDAF03] text-white px-4 sm:px-5 md:px-6 py-3 sm:py-3 md:py-4 rounded-xl sm:rounded-2xl font-semibold shadow-2xl sm:shadow-3xl hover:shadow-4xl hover:shadow-[#FDAF03]/50 transition-all duration-300 text-sm sm:text-base md:text-lg border-2 border-white whitespace-nowrap transform translate-y-2 hover:bg-[#e09900]"
               >
                 <FaPlus className="text-sm sm:text-base md:text-lg" />
                 <span>إضافة مستخدم جديد</span>
@@ -415,7 +415,7 @@ export default function AdminUsers() {
                                     }
                                     className={`px-3 sm:px-4 py-1 sm:py-2 rounded-xl font-semibold border ${
                                       currentPage === pageNum
-                                        ? "bg-[#E41E26] text-white shadow-lg border-[#E41E26]"
+                                        ? "bg-[#FDAF03] text-white shadow-lg border-[#FDAF03]"
                                         : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-gray-300 dark:border-gray-600"
                                     }`}
                                   >
