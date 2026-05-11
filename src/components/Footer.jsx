@@ -189,7 +189,7 @@ const Footer = () => {
                   href="https://wa.me/201062485133"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#8D4C0B] font-semibold hover:text-red-400 transition-colors duration-300"
+                  className="text-[#8D4C0B] font-semibold hover:text-[#b36313] transition-colors duration-300"
                 >
                   شركه TripleS للبرمجيات
                 </a>
