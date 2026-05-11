@@ -104,8 +104,8 @@ const fetchAllOrdersForStats = async (startDate, endDate, branchId = null) => {
     const startDateStr = format(adjustedStartDate, "yyyy-MM-dd");
     const endDateStr = format(endDate, "yyyy-MM-dd");
 
-    const startDateISO = `${startDateStr}T22:00:00.000Z`;
-    const endDateISO = `${endDateStr}T21:59:59.999Z`;
+    const startDateISO = `${startDateStr}T21:00:00.000Z`;
+    const endDateISO = `${endDateStr}T20:59:59.999Z`;
 
     const params = {
       rangeStartUtc: startDateISO,
@@ -145,8 +145,8 @@ const fetchOrdersByDateRange = async (
     const startDateStr = format(adjustedStartDate, "yyyy-MM-dd");
     const endDateStr = format(endDate, "yyyy-MM-dd");
 
-    const startDateISO = `${startDateStr}T22:00:00.000Z`;
-    const endDateISO = `${endDateStr}T21:59:59.999Z`;
+    const startDateISO = `${startDateStr}T21:00:00.000Z`;
+    const endDateISO = `${endDateStr}T20:59:59.999Z`;
 
     const params = {
       rangeStartUtc: startDateISO,

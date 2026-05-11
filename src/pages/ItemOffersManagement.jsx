@@ -271,7 +271,7 @@ const adjustTimeForAPI = (dateString) => {
   if (!dateString) return "";
 
   const date = new Date(dateString);
-  date.setTime(date.getTime() - 2 * 60 * 60 * 1000);
+  date.setTime(date.getTime() - 3 * 60 * 60 * 1000);
 
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -287,7 +287,7 @@ const adjustTimeFromAPI = (dateString) => {
   if (!dateString) return new Date();
 
   const date = new Date(dateString);
-  date.setTime(date.getTime() + 2 * 60 * 60 * 1000);
+  date.setTime(date.getTime() + 3 * 60 * 60 * 1000);
 
   return date;
 };

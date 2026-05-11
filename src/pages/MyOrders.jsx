@@ -195,7 +195,7 @@ export default function MyOrders() {
 
     const date = new Date(dateString);
 
-    date.setHours(date.getHours() + 2);
+    date.setHours(date.getHours() + 3);
 
     const year = date.toLocaleDateString("ar-SA-u-ca-gregory", {
       calendar: "gregory",
@@ -241,7 +241,7 @@ export default function MyOrders() {
 
     const date = new Date(dateString);
 
-    date.setHours(date.getHours() + 2);
+    date.setHours(date.getHours() + 3);
 
     const year = date.toLocaleDateString("ar-SA-u-ca-gregory", {
       calendar: "gregory",
@@ -405,9 +405,9 @@ export default function MyOrders() {
     }
 
     if (isStart) {
-      return date.toISOString().slice(0, 10) + "T22:00:00.000Z";
+      return date.toISOString().slice(0, 10) + "T21:00:00.000Z";
     } else {
-      return date.toISOString().slice(0, 10) + "T21:59:59.999Z";
+      return date.toISOString().slice(0, 10) + "T20:59:59.999Z";
     }
   };
 
@@ -623,7 +623,6 @@ export default function MyOrders() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInitialLoad]);
 
-  // Function to normalize WebSocket order format to match our app format
   const normalizeWebSocketOrder = (wsOrder) => {
     let createdAt = wsOrder.CreatedAt || wsOrder.createdAt;
     let updatedAt = wsOrder.UpdatedAt || wsOrder.updatedAt;
@@ -631,19 +630,19 @@ export default function MyOrders() {
 
     if (createdAt && createdAt.includes("T")) {
       const date = new Date(createdAt);
-      date.setHours(date.getHours() - 2);
+      date.setHours(date.getHours() - 3);
       createdAt = date.toISOString();
     }
 
     if (updatedAt && updatedAt.includes("T")) {
       const date = new Date(updatedAt);
-      date.setHours(date.getHours() - 2);
+      date.setHours(date.getHours() - 3);
       updatedAt = date.toISOString();
     }
 
     if (deliveredAt && deliveredAt.includes("T")) {
       const date = new Date(deliveredAt);
-      date.setHours(date.getHours() - 2);
+      date.setHours(date.getHours() - 3);
       deliveredAt = date.toISOString();
     }
 
