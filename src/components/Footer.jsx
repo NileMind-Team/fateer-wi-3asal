@@ -21,7 +21,7 @@ const Footer = () => {
     {
       name: "واتساب",
       icon: <FaWhatsapp />,
-      url: "https://wa.me/201025256954",
+      url: "https://wa.me/201034303024",
       color: "hover:bg-green-600",
     },
   ];
@@ -67,13 +67,18 @@ const Footer = () => {
               <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
                 <FaPhone className="text-[#FDAF03] text-sm" />
                 <span className="text-sm" dir="ltr">
-                  +20 106 002 7648
+                  +20 103 430 3024
                 </span>
               </div>
               <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
                 <FaMapMarkerAlt className="text-[#FDAF03] text-sm" />
                 <span className="text-sm">
-                  الفيوم الحواتم - امام موقف بني سويف
+                  <span className="block">
+                    شارع الجامعة الحديثة - الحي الخامس
+                  </span>
+                  <span className="block">
+                    امام عصائر العائلات - الهضبة الوسطي - المقطم
+                  </span>
                 </span>
               </div>
             </div>
